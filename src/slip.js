@@ -262,7 +262,7 @@
         setTranslate(ele, trans, 0, 0);
       }
       this.page = page;
-      if (isJump) {
+      if (isJump>=0) {
         this.onTouchEnd.call(this, NULL);
       }
       ret = this.onEnd.apply(this, [event]);
